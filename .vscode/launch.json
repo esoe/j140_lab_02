@@ -6,24 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Access",
-            "request": "launch",
-            "mainClass": "ru.molokoin/ru.molokoin.Access",
-            "projectName": "j140_lab_01"
-        },
-        {
-            "type": "java",
-            "name": "Launch Base",
-            "request": "launch",
-            "mainClass": "ru.molokoin/ru.molokoin.Base",
-            "projectName": "j140_lab_01"
-        },
-        {
-            "type": "java",
             "name": "Launch App",
             "request": "launch",
             "mainClass": "ru.molokoin/ru.molokoin.App",
-            "projectName": "j140_lab_01"
+            "projectName": "j140_lab_02"
         },
         {
             "type": "java",
@@ -31,7 +17,7 @@
             "request": "launch",
             "vmArgs": "--module-path C:\\javafx-sdk-18.0.2\\lib --add-modules=javafx.controls",
             "mainClass": "ru.molokoin.App",
-            "projectName": "j140_lab_01"
+            "projectName": "j140_lab_02"
         },
         {
             "type": "java",
