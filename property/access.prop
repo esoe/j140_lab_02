@@ -1,0 +1,3 @@
+db.password=psalm6912
+db.user=esoe
+db.url=jdbc:mysql://molokoin.ru:3306/PersonsDB

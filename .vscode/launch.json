@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Access",
+            "request": "launch",
+            "mainClass": "ru.molokoin/ru.molokoin.Access",
+            "projectName": "j140_lab_01"
+        },
+        {
+            "type": "java",
+            "name": "Launch Base",
+            "request": "launch",
+            "mainClass": "ru.molokoin/ru.molokoin.Base",
+            "projectName": "j140_lab_01"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "ru.molokoin/ru.molokoin.App",
+            "projectName": "j140_lab_01"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "vmArgs": "--module-path C:\\javafx-sdk-18.0.2\\lib --add-modules=javafx.controls",
+            "mainClass": "ru.molokoin.App",
+            "projectName": "j140_lab_01"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
