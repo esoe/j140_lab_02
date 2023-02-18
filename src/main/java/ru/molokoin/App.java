@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 /**
  * Авторизация
+ * Отображение данных из базы данных в таблице
  */
 public class App extends Application {
 
@@ -44,10 +45,10 @@ public class App extends Application {
                 //открывается, если права пользователя подтверждены
                 if (base.granted){
                     textWelcome.setText("Доступ предоставлен...");
-                    Mainframe mainframe = new Mainframe();
-                    mainframe.setX(stage.getX() + 300);
-				    mainframe.setY(stage.getY() - 200);
-                    mainframe.show();
+                    // Mainframe mainframe = new Mainframe();
+                    // mainframe.setX(stage.getX() + 300);
+				    // mainframe.setY(stage.getY() - 200);
+                    // mainframe.show();
                 } else {
                     textWelcome.setText("В доступе отказано...");
                 }
