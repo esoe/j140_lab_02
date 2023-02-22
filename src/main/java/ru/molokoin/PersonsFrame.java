@@ -49,7 +49,8 @@ public class PersonsFrame extends Stage{
             if(e.getClickCount()==2){
                 System.out.println("Выбран пользователь: " + table.getSelectionModel().getSelectedItem().getFirstnamelastname());
                 DomainsFrame df = new DomainsFrame(table.getSelectionModel().getSelectedItem().getId());
-                df.showAndWait();
+                //df.showAndWait();
+                df.show();
             }
         });
 
