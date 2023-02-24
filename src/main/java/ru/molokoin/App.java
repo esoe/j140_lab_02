@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 /**
  * Авторизация
+ * Отображение данных из базы данных в таблице
  */
 public class App extends Application {
 
@@ -33,21 +34,23 @@ public class App extends Application {
          * 1. считываются поля формы (fieldName, fieldPass), пишутся в объект User
          * 2. Подключение к базе данных
          * 3. Поиск в базе нужного пользователя
+         * 4. В случае успеха, открываем PERSONS, или предлагаем пользователю повторить повытку авторизации
          */
         buttonSignin.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 //считываем данные пользователя
                 User user = new User(fieldName.getText(), fieldPass.getText());
-                //проверяем наличие прав у пользователя
-                Base base = new Base(user);
-                //открывается, если права пользователя подтверждены
-                if (base.granted){
+                /**
+                 * проверяем наличие прав у пользователя
+                 * окно открывается, если права пользователя подтверждены
+                 */
+                if (Base.checkAccess(user)){
                     textWelcome.setText("Доступ предоставлен...");
-                    Mainframe mainframe = new Mainframe();
-                    mainframe.setX(stage.getX() + 300);
-				    mainframe.setY(stage.getY() - 200);
-                    mainframe.show();
+                    PersonsFrame personsFrame = new PersonsFrame();
+                    personsFrame.setX(stage.getX() + 300);
+				    personsFrame.setY(stage.getY() - 200);
+                    personsFrame.show();
                 } else {
                     textWelcome.setText("В доступе отказано...");
                 }
